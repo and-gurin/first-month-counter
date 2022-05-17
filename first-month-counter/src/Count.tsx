@@ -1,12 +1,13 @@
 import React from 'react';
 
 type CountPropsType = {
-    count: number
+    count: number | string
+    wrongValue: boolean
 }
 export const Count = (props: CountPropsType) => {
     return (
-        <div className={'Count'}>
-            {props.count}
-        </div>
+            <div className={props.wrongValue ?'Count_mist':'Count'}>
+                {props.count}
+            </div>
     );
 };

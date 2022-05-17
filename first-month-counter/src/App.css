@@ -1,31 +1,72 @@
+.Wrapper {
+  display: flex;
+  justify-content: center;
+}
 .App {
   text-align: center;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 200px;
   border: solid dodgerblue 3px;
   border-radius: 5px;
-  margin: 50px auto;
+  margin: 50px;
+}
+
+.Input {
+  width: 50%;
+  height: 25px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  border: solid dodgerblue 3px;
+  border-radius: 5px;
+  outline:none;
+  text-align: center;
+}
+.Input_mist {
+  width: 50%;
+  height: 25px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  border-radius: 5px;
+  outline:none;
+  border: solid red 3px;
+  background-color: lightpink;
+  text-align: center;
+}
+.CountSet {
+  font-size: 12px;
+  font-weight: bold;
+  border: solid dodgerblue 1px;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 5px;
+  margin: 10px 5px;
 }
 .Count {
+  min-height: 55%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 42px;
-  font-weight: bold;
-  width: 130px;
-  height: 65px;
+  font-size: 68px;
+  font-weight: normal;
   border: solid dodgerblue 1px;
   background-color: dodgerblue;
-  color: red;
+  color: white;
   border-radius: 5px;
-  margin: 10px auto;
+  margin: 10px 5px;
+}
+.Count_mist {
+  min-height: 55%;
+  color: red;
+  font-size: 48px;
 }
 .Button-block {
   display: flex;
   justify-content: space-between;
   border: solid dodgerblue 3px;
   border-radius: 5px;
-  margin: 0 3px;
+  margin: 5px 3px;
 }
 .Button {
   text-align: center;
