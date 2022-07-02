@@ -1,5 +1,6 @@
 import React, {ChangeEvent, useEffect} from 'react';
 import {Button} from "./Button";
+import {AppStateType} from "./store/store";
 
 type CountSetPropsType = {
     setCountValue: (startValue: number, maxValue: number) => void
@@ -10,8 +11,11 @@ type CountSetPropsType = {
     wrongValue:boolean
 
 }
+export let preloadedState: AppStateType;
+
 export const CountSet = (props: CountSetPropsType) => {
     const {setStartValue, setMaxValue, maxValue, startValue, wrongValue} = props
+
 
     useEffect(()=>{
         let startValueAsString = localStorage.getItem('startValue')
